@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cart</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/fontawesome.pro.6.0.0.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <section class="main-menu">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo/logo.jpg" />
+                </a>
+                <div class="info">
+                    <ul>
+                        <li><i class="fa-duotone fa-phone"></i><a href="">024 3856 3856</a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="">info@freshgarden.vn</a></li>
+                        <li><i class="fa-solid fa-location-dot"></i><a href="">46 An Dương, Hà Nội</a></li>
+                    </ul>
+                </div>
+                <div class="header-icon">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="product.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sản phẩm
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="product.html">Bánh kem</a></li>
+                                    <li><a class="dropdown-item" href="product.html">Bánh mì</a></li>
+                                    <li><a class="dropdown-item" href="product.html">Bánh ngọt</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tin tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="cart-page">
+        <div class="container-fluid">
+            <div class="heading-cart-page">
+                <h2>Giỏ hàng của bạn</h2>
+                <span>
+                  Bạn có 1 sản phẩm trong giỏ hàng
+                </span>
+            </div>
+            <div class="cart-product">
+                <table class="table-cart">
+                    <thead>
+                        <tr>
+                            <th class="image"></th>
+                            <th class="item">Tên sản phẩm</th>
+                            <th class="item">Giá</th>
+                            <th class="item">Số lượng</th>
+                            <th class="item">Thành tiền</th>
+                            <th class="remove"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="image">
+                                <div class="product-image">
+                                    <img src="assets/images/home-carousel-products/love_melody_4__3_-removebg-preview_ea6a78caa74a4e56a003d5d43228ef4f_grande.jpg" />
+                                </div>
+                            </td>
+                            <td class="item"><h5>Bánh Kem Love Melody 4</h5></td>
+                            <td class="item"><p>150,000₫</p></td>
+                            <td class="quantity">1</td>
+                            <td class="item"><p>150,000₫</p></td>
+                            <td class="remove"><a href=""><i class="fa fa-close"></a></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 sidebox">
+                    <h3>Ghi chú đơn hàng</h3>
+                    <div class="note">
+                        <textarea placeholder="Thông tin người được tặng(nếu có); thông tin chữ viết trên bánh..."></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-5 order">
+                    <h3>Thông tin đơn hàng</h3>
+                    <div class="order-total">
+                        <h6>
+                            Tổng tiền: 
+                        </h6>
+                        <span class="order-price"> 150,000đ</span>
+                    </div>
+                    <div class="order-date">
+                        <label>Thời gian giao hàng</label>
+                        <div class="date-time">
+                            <input type="date" name="name" placeholder="__/__/____" value="" />
+                            <select class="time">
+                                <option>07:00</option>
+                                <option>08:00</option>
+                                <option>09:00</option>
+                                <option>10:00</option>
+                                <option>11:00</option>
+                                <option>12:00</option>
+                                <option>13:00</option>
+                                <option>14:00</option>
+                                <option>15:00</option>
+                                <option>16:00</option>
+                                <option>17:00</option>
+                                <option>18:00</option>
+                                <option>19:00</option>
+                                <option>20:00</option>
+                                <option>21:00</option>
+                                <option>22:00</option>
+                                <option>23:00</option>
+                            </select>
+                            <p>
+                                Phí vận chuyển sẽ được tính ở trang thanh toán.<br />
+                                Bạn cũng có thể nhập mã giảm giá ở trang thanh toán.
+                            </p>
+                        </div>
+                    </div>
+                    <button>Thanh toán</button>
+                    <a class="go-to-back" href="index.html">
+                        <i class="fa-thin fa-circle-left"></i>
+                        <p>Tiếp tục mua hàng</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-top">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h4>Để lại lời nhắn</h4>
+                    <div class="contact-form">
+                        <div class="row">
+                            <div class="col-12 contact-info">
+                                <input class="input-text" type="text" placeholder="Tên của bạn" />
+                            </div>
+                            <div class="col-12 contact-info">
+                                <input class="input-text" type="text" placeholder="Email của bạn" />
+                            </div>
+                            <div class="col-12 contact-info">
+                                <input class="input-text" type="text" placeholder="Số điện thoại của bạn" />
+                            </div>
+                            <div class="col-12 contact-info">
+                                <textarea class="contact-content" placeholder="Nội dung"></textarea>
+                            </div>
+                            <div class="col-12 contact-info">
+                                <button class="button-send">Gửi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h4>Công ty TNHH PHD</h4>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>
+                                46 phố An Dương, phường Yên Phụ, quận Tây Hồ, Thành phố Hà Nội.
+                            </p>
+                        </li>
+                        <li>
+                            <i class="fa-duotone fa-phone"></i>
+                            <p>
+                                024 3856 3856
+                            </p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>
+                                Mã số doanh nghiệp: 0103833363 Do Sở Kế hoạch - Đầu tư Hà Nội cấp ngày 14/05/2009.
+                            </p>
+                        </li>
+                        <li>
+                            <img src="assets/images/logo/logo_bct_019590229b4c4dfda690236b67f7aff4.jpg" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>Copyright © 2023 Freshgarden.vn</span>
+        </div>
+    </footer>
+    <section id="script">
+        <script src="assets/js/bootstrap.bundle.js"></script>
+        <script src="assets/js/jquery-3.6.0.js"></script>
+        <script src="assets/js/script.js"></script>
+    </section>
+</body>
+</html>
